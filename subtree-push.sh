@@ -3,6 +3,7 @@
 #
 # Push a specific subtree back to its origin.
 # Parameters: $1 -> The prefix of the subtree you wish to push
+#					we will automatically lookup where to push to
 #
 exec < .gitsubtree
 while read line
