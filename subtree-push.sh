@@ -1,4 +1,9 @@
 #!/bin/sh
+# subtree-push
+#
+# Push a specific subtree back to its origin.
+# Parameters: $1 -> The prefix of the subtree you wish to push
+#
 exec < .gitsubtree
 while read line
 do
