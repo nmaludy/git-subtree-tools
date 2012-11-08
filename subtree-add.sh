@@ -7,4 +7,6 @@
 # to your subtree by its prefix.
 #
 git subtree add --prefix=$1 $2 $3
-echo $1 $2 $3 >> .gitsubtree
+if [ $? -eq 0 ]; then
+    echo $1 $2 $3 >> .gitsubtree
+fi
